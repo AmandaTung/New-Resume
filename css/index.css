@@ -1,0 +1,46 @@
+.header{font-size: 28px; font-size: 0.28rem; background: rgba(102, 0, 0, 0.2);height: 50px; width: 600px; line-height: 50px; position: fixed; z-index: 999; top: 30px; right: 30px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+.header ul li{display: inline-block; *display: inline; *zoom: 1;}
+.header ul li a{color: #e4e4e4;}
+.home{width: 100%; background-image: url("../img/slider.png"); background-repeat: no-repeat; background-size: 100% 100%; color: #e4e4e4; z-index: 0;}
+.home h1{font-size: 72px; font-size: 0.72rem; top: 5%; left: 8%; width: 300px;}
+.home h2{font-size: 54px; font-size: 0.54rem; top:10% ; left: 10%; width: 300px;}
+.home a{font-size: 36px; font-size: 0.36rem; color: #e4e4e4; display: block; width: 200px; border: 2px solid #e4e4e4; top: 50%; left: 50%;
+-ms-transform: translate(-100px);		/* IE 9 */
+-webkit-transform: translate(-100px);	/* Safari and Chrome */
+-o-transform: translate(-100px);		/* Opera */
+-moz-transform: translate(-100px);		/* Firefox */
+transform: translate(-100px);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.information{width: 100%; background: #f2f2f2; color: #333; z-index: 0;}
+.skill{width: 100%; z-index: 0; overflow: hidden;}
+.experience{width: 100%; background: #f2f2f2; z-index: 0;}
+.information h2,.skill h2,.experience h2{font-size: 54px; font-size: 0.54rem; color: #333; padding-top: 30px; padding-left: 30px;}
+.information button{color: #797979; width: 150px; height: 50px;border: 4px solid #797979; background-color: #fff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.button{width: 30%;}
+.result{width: 60%; height: 60%; border: 2px solid #333; }
+.skill ul li{font-size: 20px; font-size: 0.2rem; width: 150px; height: 150px; color: #e4e4e4; border: 4px solid #ffcccc; line-height: 150px;}
+.box{display: -webkit-flex; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.item{margin-top: 20px; margin-left: 10px; margin-right: 10px;
+-webkit-border-radius: 75px;
+-moz-border-radius: 75px;
+border-radius: 75px;
+}
+.strip{width: 100px; height: 20px; display: inline-block; *display: inline; *zoom: 1;
+background: -webkit-linear-gradient(left,rgba(157,107,105,0),rgba(157,107,105,1));
+background: -o-linear-gradient(right,rgba(157,107,105,0),rgba(157,107,105,1));
+background: -moz-linear-gradient(right,rgba(157,107,105,0),rgba(157,107,105,1));
+background: linear-gradient(to right,rgba(157,107,105,0),rgba(157,107,105,1));
+}
+.myCanvas{display: block;}
+.footer{width: 100%; height: 90px; background: #66ccff; color: #333; padding-top: 60px;}
