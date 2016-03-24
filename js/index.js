@@ -1,4 +1,4 @@
-window.onload = function(){setSize();draw();}
+window.onload = function(){setSize();draw();loadXMLDoc()};
 window.onresize = setSize;
 function setSize(){
   var height = document.documentElement.clientHeight+'px';
@@ -64,7 +64,7 @@ function draw(){
 }
 
 function loadXMLDoc(){
-  document.getElementById('pBlog').onclick = pBlog();
+  document.getElementById('pBlog').onclick = pBlog;
 }
 function pBlog(){
   var request;
