@@ -62,25 +62,6 @@ function draw(){
   context.fillText('Photoshop',340,400);
   context.closePath();
 }
-
-function loadXMLDoc(){
-  document.getElementById('baseData').onclick = baseData;
-}
-function baseData(){
-  var request;
-  if(window.XMLHttpRequest){
-    request = new XMLHttpRequest();//IE7+,Firefox,Chrome,Opera,Safari...
-  }else{
-    request = new ActiveXObject('Microsoft.XMLHTTP');//IE6,IE5
-  }
-  request.open('GET','table.html',true);
-  request.send();
-  request.onreadystatechange=function(){
-    if (request.readyState == 4 && request.status == 200) {
-      document.getElementById('table').innerHTML = request.responseText;
-    }
-  }
-}
 $(document).ready(function(){
   $('#baseData').click(function(){
     $('#slider').hide();
