@@ -64,20 +64,37 @@ function draw(){
 }
 
 function loadXMLDoc(){
-  document.getElementById('pBlog').onclick = pBlog;
+  document.getElementById('baseData').onclick = baseData;
 }
-function pBlog(){
+function baseData(){
   var request;
   if(window.XMLHttpRequest){
     request = new XMLHttpRequest();//IE7+,Firefox,Chrome,Opera,Safari...
   }else{
     request = new ActiveXObject('Microsoft.XMLHTTP');//IE6,IE5
   }
-  request.open('GET','test.php',true);
+  request.open('GET','table.html',true);
   request.send();
   request.onreadystatechange=function(){
     if (request.readyState == 4 && request.status == 200) {
-      document.getElementById('result').innerHTML = request.responseText;
+      document.getElementById('table').innerHTML = request.responseText;
     }
   }
 }
+$(document).ready(function(){
+  $('#baseData').click(function(){
+    $('#slider').hide();
+    $('#new').hide();
+    $('#table').show();
+  });
+  $('#work').click(function(){
+    $('#table').hide();
+    $('#slider').hide();
+    $('#new').show();
+  });
+  $('#ps').click(function(){
+    $('#table').hide();
+    $('#new').hide();
+    $('#slider').show();
+  });
+});

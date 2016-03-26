@@ -25,16 +25,54 @@
         <h2>Information</h2>
         <div class="button fl mt100">
           <button type="button" name="button" id="baseData" class="f20 rf20 fb fr cb">Base data</button>
-          <button type="button" name="button" id="pBlog" class="f20 rf20 fb fr cb mt30">Personal Blog</button>
           <button type="button" name="button" id="work" class="f20 rf20 fb fr cb mt30">Works</button>
+          <button type="button" name="button" id="ps" class="f20 rf20 fb fr cb mt30">photoshop</button>
         </div>
-        <div id="result" class="result fr mt100">
-          123
+        <div id="result" class="result fl mt100 ml100">
+          <a href="http://amandatung.com/news" target="_blank" id="new" style="display:none;">http://amandatung.com/news</a>
+          <div id="table">
+            <table class="data f14 rf14">
+              <tr bgcolor="#fff">
+                <th>Name</th>
+                <td>Amanda</td>
+                <th>Graduated From</th>
+                <td>Shenyangligong University</td>
+              </tr>
+              <tr>
+                <th>Sex</th>
+                <td>Famale</td>
+                <th>Professional</th>
+                <td>Information Management and Information System</td>
+              </tr>
+              <tr bgcolor="#fff">
+                <th>Education</th>
+                <td>Bachelor Degree</td>
+                <th>Number</th>
+                <td>13820155796</td>
+              </tr>
+              <tr>
+                <th>Date of Birth</th>
+                <td>1989.7</td>
+                <th>Email</th>
+                <td>smartworkabc@163.com</td>
+              </tr>
+            </table>
+          </div>
+          <div id="slider" class="flexslider" style="display:none; margin-left:150px;">
+            <ul class="slides">
+              <li><div class="img"><img src="img/布质感.png" alt="布质感" /></div></li>
+              <li><div class="img"><img src="img/锤子时钟.jpg" alt="锤子时钟" /></div></li>
+              <li><div class="img"><img src="img/开关.jpg" alt="开关" /></div></li>
+              <li><div class="img"><img src="img/上传图标.jpg" alt="上传图标" /></div></li>
+              <li><div class="img"><img src="img/折纸效果.png" alt="折纸效果" /></div></li>
+              <li><div class="img"><img src="img/质感拟物.jpg" alt="质感拟物" /></div></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="skill pr" id="skill">
         <h2>Skills</h2>
-        <ul class="tc box">
+        <ul class="tc box" style="margin-top:5%;">
           <li class="item" style="background:rgba(157,107,105,0.9);">HTML</li>
           <li class="item" style="background:rgba(157,107,105,0.7);">HTML5</li>
           <li class="item" style="background:rgba(157,107,105,0.6);">JavaScript</li>
@@ -60,10 +98,18 @@
       <p>Email:smartworkabc@163.com</p>
       <p>Copyright2016-AmandaTung</p>
     </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
     <script>
-
-
+      $(function(){
+        $('#slider').flexslider({
+          animation:'slide',
+          direction:'horizontal',
+          easing:'swing'
+        });
+      });
     </script>
   </body>
 </html>
